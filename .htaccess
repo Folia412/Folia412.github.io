@@ -1,0 +1,4 @@
+<Files "Species A.html">
+    Order Allow,Deny
+    Deny from all
+</Files>

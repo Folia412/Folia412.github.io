@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /Species A.html
+Disallow: /Species B.html
