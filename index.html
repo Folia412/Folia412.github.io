@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+      function onClick(e) {
+        e.preventDefault();
+        grecaptcha.enterprise.ready(async () => {
+          const token = await grecaptcha.enterprise.execute('6LciTsMpAAAAAGoe2klZ5CXsnoW1dMD3yivL1d-L', {action: 'LOGIN'});
+        });
+      }
+    </script>
     <style>
         body {
             text-align: center;
